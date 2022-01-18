@@ -4,7 +4,7 @@ import random
 
 
 pygame.init()
-
+pygame.display.set_caption("Snake Game")
 GRAY = (150,150,150)
 WHITE = (255,255,255)
 RED = (235, 52, 52)
@@ -21,6 +21,8 @@ class Apple():
         self.image = pygame.image.load('source/apple.jpg').convert()
         self.apple_x = random.randrange(40, 760, 40)
         self.apple_y = random.randrange(40, 560, 40)
+    def GenerateXY(self):
+        pass
 class Snake():
     def __init__(self):
         self.image = pygame.image.load('source/block.jpg').convert()
@@ -93,7 +95,7 @@ def GameOver():
             GameOverFont()
 def SnakeGrow():
     if snake.head_x == apple.apple_x and snake.head_y == apple.apple_y:
-        snake.body.append(snake.image)
+        # snake.body.append(snake.image)
         print("Snake Grow")
 
 while Start:
