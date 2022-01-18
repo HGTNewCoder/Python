@@ -1,0 +1,5 @@
+s = input("Nhap cac so: ")
+i = s.split(",")
+tup = tuple(i)
+print(i)
+print(tup)
