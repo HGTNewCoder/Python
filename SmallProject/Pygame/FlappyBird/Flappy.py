@@ -8,7 +8,7 @@ BLACK = (0,0,0)
 running = True
 
 pygame.init()
-pygame.display.set_caption("Flappy Bird")
+pygame.display.set_caption("Flappy Bird2")
 screen = pygame.display.set_mode((SCREENLENGTH, SCREENWIDTH))
 
 while running:
