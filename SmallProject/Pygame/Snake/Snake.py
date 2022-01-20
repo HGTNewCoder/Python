@@ -14,6 +14,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_LENGTH))
 
 background = pygame.image.load('source/background.jpg').convert()
 wall = pygame.image.load('source/block.jpg').convert()
+wall = pygame.transform.scale(wall, (800, 40))
 wall_num_x = int(SCREEN_WIDTH / wall.get_width())
 wall_num_y = int(SCREEN_LENGTH / wall.get_height())
 
@@ -37,20 +38,20 @@ while Start:
     screen.fill(WHITE)
     screen.blit(background, (0, 0))
     screen.blit(apple, (apple_x, apple_y))
-
-
-    for i in range (0, wall_num_x):
-        k = i*40
-        screen.blit(wall, (k,0))
-    for i in range (0, wall_num_y):
-        k = i*40
-        screen.blit(wall, (0, k))
-    for i in range (0, wall_num_x):
-        k = i*40
-        screen.blit(wall, (k, 560))
-    for i in range (0, wall_num_y):
-        k = i*40
-        screen.blit(wall, (760, k))
+    screen.blit(wall, (0, 0))
+    # for i in range (0, wall_num_x):
+    #     k = i*40
+    #     screen.blit(wall, (k,0))
+    # for i in range (0, wall_num_y):
+    #     k = i*40
+    #     screen.blit(wall, (0, k))
+    # for i in range (0, wall_num_x):
+    #     k = i*40
+    #     screen.blit(wall, (k, 560))
+    # for i in range (0, wall_num_y):
+    #     k = i*40
+    #     screen.blit(wall, (760, k))
+    
     if snake_x == apple_x and snake_y == apple_y:
         GameOver()
     

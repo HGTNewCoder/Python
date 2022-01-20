@@ -20,20 +20,20 @@ running = True
 
 
 #Tạo nền
-bg = pygame.image.load('assests/background-night.png').convert()
+bg = pygame.image.load('assets/background-night.png').convert()
 bg = pygame.transform.scale(bg, (SCREENLENGTH, SCREENWIDTH))
 
 #Tạo Sàn
-fl = pygame.image.load('assests/floor.png').convert()
+fl = pygame.image.load('assets/floor.png').convert()
 fl = pygame.transform.scale2x(fl)
 fl_x = 0
 
 #Tạo Chim
-bird = pygame.image.load('assests/yellowbird-midflap.png').convert()
+bird = pygame.image.load('assets/yellowbird-midflap.png').convert()
 bird_rect = bird.get_rect(center = (100, SCREENWIDTH / 2))
 
 #Tạo ống
-pipe_surface = pygame.image.load('assests/pipe-green.png').convert()
+pipe_surface = pygame.image.load('assets/pipe-green.png').convert()
 pipe_surface = pygame.transform.scale2x(pipe_surface)
 spawnpipe = pygame.USEREVENT
 pygame.time.set_timer(spawnpipe, 1200)
