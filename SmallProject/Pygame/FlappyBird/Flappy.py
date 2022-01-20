@@ -32,18 +32,19 @@ fl_x = 0
 bird = pygame.image.load('assets/yellowbird-midflap.png').convert()
 bird_rect = bird.get_rect(center = (100, SCREENWIDTH / 2))
 
-#Tạo ống
+#Tạo ống (chưa hiểu)
 pipe_surface = pygame.image.load('assets/pipe-green.png').convert()
 pipe_surface = pygame.transform.scale2x(pipe_surface)
 spawnpipe = pygame.USEREVENT
 pygame.time.set_timer(spawnpipe, 1200)
 pipe_list = []
 
-#Các hàm của trò chơi
-def draw_floor():
+#Các hàm của trò chơi)
+def draw_floor(): # tạm hiểu
     screen.blit(fl,(fl_x, SCREENWIDTH - 60))
     screen.blit(fl,(fl_x + SCREENLENGTH, SCREENWIDTH - 60))
-def create_pipe():
+
+def create_pipe(): # chưa hiểu
     new_pipe = pipe_surface.get_rect(midtop = (SCREENLENGTH / 2, SCREENWIDTH / 2))
     return new_pipe
 def move_pipe(pipe):
