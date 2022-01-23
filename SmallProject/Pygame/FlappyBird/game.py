@@ -55,7 +55,7 @@ pygame.mixer.pre_init(frequency=44100, size=-16, channels=2, buffer=512)
 pygame.init()
 screen= pygame.display.set_mode((432,768))
 clock = pygame.time.Clock()
-game_font = pygame.font.Font('04B_19.ttf',35)
+game_font = pygame.font.Font('04B_19.TTF',35)
 #Tạo các biến cho trò chơi
 gravity = 0.25
 bird_movement = 0
