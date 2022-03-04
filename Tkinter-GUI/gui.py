@@ -3,5 +3,5 @@ import imp
 from tkinter import *
 win = Tk()
 label_1 =Label(win, text= "Hello World!")
-label_1.pack()
+label_1.pack(side = LEFT)
 win.mainloop()
